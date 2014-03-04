@@ -1,0 +1,13 @@
+<div class="container">
+  <%if @tweeted%>
+    <h2> Your tweet was successful </h2>
+  <%end%>
+  <h1>Welcome to Tweet-O-Matic!</h1>
+  <form method="POST" action="/tweet" id="tweet_stuff">
+    <input type="text" name="tweet" placeholder="tweet" id="tweet">
+    <input type="hidden" name="username" value="<%=@user.username%>">
+    <input type="hidden" name="key1" value="<%=@user.oauth_token%>">
+    <input type="hidden" name="key2" value="<%=@user.oauth_secret%>">
+    <input type="submit" value="Tweet It!">
+  </form>
+</div>
