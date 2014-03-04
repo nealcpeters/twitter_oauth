@@ -17,6 +17,8 @@ require 'logger'
 
 require 'sinatra'
 require 'shotgun'
+require 'pry'
+require 'pry-nav'
 
 require 'erb'
 
